@@ -730,7 +730,7 @@ MainStuffSection:NewToggle("AutoToxic(English)","Stop open that" , function(v)
 					if mouse.Target and mouse.Target.Parent then
 						game:GetService("Players").LocalPlayer.Backpack.Block.RemoteEvent:FireServer(mouse.Target,Enum.NormalId.Right)
 						game:GetService("Players").LocalPlayer.Backpack.Block.RemoteEvent:FireServer(mouse.Target,Enum.NormalId.Left)
-						game:GetService("Players").LocalPlayer.Backpack.Block.RemoteEvent:FireServer(mouse.Target,Enum.NormalId.Up)					end
+						game:GetService("Players").LocalPlayer.Backpack.Block.RemoteEvent:FireServer(mouse.Target,Enum.NormalId.Top)					end
 				end
 			end)
 		end)
