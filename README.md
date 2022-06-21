@@ -26,6 +26,28 @@ local Library  = loadstring(game:HttpGet("https://raw.githubusercontent.com/aroo
 		end
 
 	end)
+		MainStuffSection:NewButton("shield godmode(e)","Stop open that" , function()
+		
+	local Mouse = game:GetService("Players").LocalPlayer:GetMouse()
+
+	Mouse.KeyDown:connect(function(Shield) 
+
+		local Adrix = Shield:lower()
+
+		if Adrix == "e" then -- cambia "e" por otra tecla que se te haga mas comoda
+
+			game.Players.LocalPlayer.Backpack.Shield.Parent = game.Players.LocalPlayer.Character
+			mouse1click()
+			mouse1click()
+			mouse1click()
+			wait()
+			game:GetService("Players").LocalPlayer.Character.Shield.ShieldPotion:Destroy()
+			game.Players.LocalPlayer.Character.Shield.Parent = game.Players.LocalPlayer.Backpack
+		end
+
+	end)
+end)
+
 
 	MainStuffSection:NewButton("Circle Sword","Stop open that" , function()
 		Speed = 0
